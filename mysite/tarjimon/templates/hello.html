@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Salom Safihasi</title>
+  </head>
+  <body>
+    <h1>Salom - {{ ism }}</h1>
+    {% if ism == 'Diyorbek' %}
+      <h2>Admin sahifaga xush kelibsiz!</h2>
+    {% else %}
+      <h2>Sahifaga xush kelibsiz!</h2>
+    {% endif %}
+  </body>
+</html>

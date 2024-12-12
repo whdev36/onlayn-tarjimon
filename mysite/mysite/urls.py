@@ -4,5 +4,6 @@ from tarjimon import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('salom/', views.salom),
+    path('salom/', views.salom, name='salom'),
+    path('hello/', views.hello, name='hello'),
 ]
