@@ -1,3 +1,8 @@
 from django.contrib import admin
+from . import models
 
-# Register your models here.
+
+class LugatAdmin(admin.ModelAdmin):
+    list_display = ['ing', 'uzb']
+
+admin.site.register(models.Lugat, LugatAdmin)

@@ -32,10 +32,10 @@
         <!-- Qidiruv -->
         <div class="inline" style="width: 90%">
           <div class="ui massive form search">
-            <div class="ui icon input" style="width: 100%">
-              <input type="text" name="q" value="" class="prompt" placeholder="So'zni kiriting ...">
+            <form action="{% url 'index' %}" method="GET" class="ui icon input" style="width: 100%">
+              <input type="text" name="s" value="{{ s }}" class="prompt" placeholder="So'zni kiriting ...">
               <i class="icon search link"></i>
-            </div>
+            </form>
           </div>
         </div>
         <!-- /Qidiruv -->
