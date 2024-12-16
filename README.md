@@ -82,3 +82,9 @@ Ushbu loyiha quyidagi [YouTube video darsligi](https://youtube.com/playlist?list
 **whdev36**
 
 GitHub: [whdev36](https://github.com/whdev36)
+
+## 📜 License
+
+MIT License
+
+Bu loyiha MIT litsenziyasi asosida tarqatiladi. Qo‘shimcha ma‘lumot uchun quyidagi faylni ko‘ring: [LICENSE](./LICENSE).
