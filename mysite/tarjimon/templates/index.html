@@ -52,10 +52,19 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Programmer</td>
-              <td>Dasturchi</td>
-            </tr>
+            {% if natijalar %}
+              {% for natija in natijalar %}
+                <tr>
+                  <td>{{ natija.ing }}</td>
+                  <td>{{ natija.uzb }}</td>
+                </tr>
+              {% endfor %}
+            {% else %}
+              <tr>
+                <td>Programmer</td>
+                <td>Dasturchi</td>
+              </tr>
+            {% endif %}
           </tbody>
         </table>
       </div>

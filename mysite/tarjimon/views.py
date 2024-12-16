@@ -12,5 +12,8 @@ def hello(request):
 
 # Bosh sahifani yaratish
 def index(request):
+    natijalar = ''
     s = request.GET.get('s', '')
-    return render(request, 'index.html', {'s': s})
+    if s and s != '':
+        natijalar = models.Lugat.objects.filter(ing__icontains=s).all()[:3] # 3 ta natijani olamiz!
+    return render(request, 'index.html', {'s': s, 'natijalar': natijalar})
